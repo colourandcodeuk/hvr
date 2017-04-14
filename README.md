@@ -1,4 +1,4 @@
-# Hvr
+# Hvr.
 ### A collection of beautiful CSS hover effects
 
 #### Changelog
@@ -13,4 +13,3 @@ Hvr will be updated with 5 new effects weekly.
 * Paste the CSS into your stylesheet
   + Please note if you're using an icon effect, you'll need the Ionicons font
 * Use the class specified to target the element you would like to animate
-
