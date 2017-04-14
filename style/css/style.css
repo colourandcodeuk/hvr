@@ -1,0 +1,918 @@
+/*
+Hvr by Colour & Code is a bespoke
+collection of hover animaations that
+are lightweight, modern and beautiful.
+
+colourandcode.net
+*/
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Partials */
+/*_variables.scss */
+/*_header.scss */
+/* line 3, ../sass/_partials/_header.scss */
+header {
+  height: 7vh;
+  width: 100%;
+  background: #162426;
+  font-family: "baskerville-urw", serif;
+  color: #fff;
+}
+/* line 9, ../sass/_partials/_header.scss */
+header p {
+  font-size: 18pt;
+  margin-left: 10px;
+}
+/* line 12, ../sass/_partials/_header.scss */
+header p img {
+  width: 30px;
+  height: auto;
+}
+/* line 17, ../sass/_partials/_header.scss */
+header a {
+  margin-left: auto;
+  margin-right: 10px;
+}
+/* line 20, ../sass/_partials/_header.scss */
+header a img {
+  width: 30px;
+  height: auto;
+}
+
+/* line 1, ../sass/_partials/_global.scss */
+* {
+  -moz-transition: 250ms;
+  -o-transition: 250ms;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/_partials/_global.scss */
+body {
+  font-family: "futura-pt", sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  color: #162426;
+}
+
+/* line 13, ../sass/_partials/_global.scss */
+a {
+  color: #66BF7A;
+  text-decoration: none;
+}
+
+/* line 17, ../sass/_partials/_global.scss */
+.flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 21, ../sass/_partials/_global.scss */
+.flex-center {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* line 24, ../sass/_partials/_global.scss */
+.flex-v-center {
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* line 27, ../sass/_partials/_global.scss */
+.scrolling, .item {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* line 31, ../sass/_partials/_global.scss */
+.pageContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* line 35, ../sass/_partials/_global.scss */
+.padded {
+  padding: 20px;
+}
+
+/* line 38, ../sass/_partials/_global.scss */
+.banner {
+  height: 33vh;
+  text-align: center;
+  width: 100%;
+}
+/* line 42, ../sass/_partials/_global.scss */
+.banner h1 {
+  font-family: "baskerville-urw", serif;
+  font-size: 32pt;
+  font-weight: 100;
+  opacity: 0.85;
+  width: 100%;
+}
+/* line 49, ../sass/_partials/_global.scss */
+.banner p {
+  font-size: 8pt;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+}
+/* line 55, ../sass/_partials/_global.scss */
+.banner a {
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  font-size: 10pt;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+/* line 63, ../sass/_partials/_global.scss */
+.animationsContainer {
+  height: 60vh;
+}
+/* line 65, ../sass/_partials/_global.scss */
+.animationsContainer .animationVariant {
+  width: 20vw;
+}
+/* line 67, ../sass/_partials/_global.scss */
+.animationsContainer .animationVariant .variantsMenu {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 70, ../sass/_partials/_global.scss */
+.animationsContainer .animationVariant .variantsMenu li {
+  padding: 10px 5px;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  font-size: 10pt;
+  line-height: 14pt;
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* line 79, ../sass/_partials/_global.scss */
+.animationsContainer .animationVariant .variantsMenu li.active, .animationsContainer .animationVariant .variantsMenu li:hover {
+  opacity: 1;
+  font-size: 12pt;
+}
+/* line 85, ../sass/_partials/_global.scss */
+.animationsContainer code {
+  font-size: 10pt;
+}
+/* line 88, ../sass/_partials/_global.scss */
+.animationsContainer .examples {
+  width: 40vw;
+  background: #F0F0F0;
+  position: relative;
+}
+/* line 92, ../sass/_partials/_global.scss */
+.animationsContainer .examples .exampleHeader {
+  font-family: "baskerville-urw", serif;
+  padding: 30px;
+  font-size: 12pt;
+}
+/* line 96, ../sass/_partials/_global.scss */
+.animationsContainer .examples .exampleHeader h2 {
+  font-size: 16pt;
+}
+/* line 99, ../sass/_partials/_global.scss */
+.animationsContainer .examples .exampleHeader p {
+  font-size: 12pt;
+  line-height: 15pt;
+  opacity: 0.7;
+}
+/* line 105, ../sass/_partials/_global.scss */
+.animationsContainer .examples .item {
+  opacity: 0;
+  z-index: -99;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/* line 114, ../sass/_partials/_global.scss */
+.animationsContainer .examples .item.active {
+  opacity: 1;
+  z-index: 999;
+}
+/* line 119, ../sass/_partials/_global.scss */
+.animationsContainer .examples .animationList li {
+  background: #E5E5E5;
+  padding: 20px 30px;
+  margin-bottom: 2px;
+}
+/* line 123, ../sass/_partials/_global.scss */
+.animationsContainer .examples .animationList li h3 {
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  font-size: 10pt;
+}
+/* line 131, ../sass/_partials/_global.scss */
+.animationsContainer .examples .animationList li .usethis {
+  margin-left: auto;
+  padding: 10px 20px;
+  background: #162426;
+  color: #fff;
+  display: inline-block;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -moz-box-shadow: 0px 0px 0px #66BF7A;
+  -webkit-box-shadow: 0px 0px 0px #66BF7A;
+  box-shadow: 0px 0px 0px #66BF7A;
+  z-index: 2;
+  position: relative;
+}
+/* line 142, ../sass/_partials/_global.scss */
+.animationsContainer .examples .animationList li .usethis:after {
+  z-index: -1;
+  content: "\f489";
+  position: absolute;
+  color: #FFF;
+  width: 0;
+  overflow: hidden;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/* line 167, ../sass/_partials/_global.scss */
+.animationsContainer .examples .animationList li .usethis:hover, .animationsContainer .examples .animationList li .usethis.active {
+  -moz-box-shadow: 20px 0px 0px #66BF7A;
+  -webkit-box-shadow: 20px 0px 0px #66BF7A;
+  box-shadow: 20px 0px 0px #66BF7A;
+}
+/* line 170, ../sass/_partials/_global.scss */
+.animationsContainer .examples .animationList li .usethis:hover:after, .animationsContainer .examples .animationList li .usethis.active:after {
+  right: -20px;
+  width: 20px;
+}
+/* line 176, ../sass/_partials/_global.scss */
+.animationsContainer .examples .animationList li div {
+  width: 100%;
+}
+/* line 182, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer {
+  width: 40vw;
+  background: #162426;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 188, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer h2 {
+  color: #fff;
+}
+/* line 191, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer .preview {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  height: 100%;
+}
+/* line 197, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer .preview p {
+  font-size: 40pt;
+  width: 50%;
+  font-weight: 800;
+  opacity: 0.1;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/* line 204, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer .preview:after {
+  content: "";
+  position: absolute;
+  right: -40%;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-image: url("/img/logoflipped.svg");
+  background-position: center;
+  height: 100%;
+  width: 500px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/* line 219, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer .codeIndiv {
+  padding: 30px;
+  opacity: 0;
+  z-index: -99;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/* line 229, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer .codeIndiv.active {
+  opacity: 1;
+  z-index: 999;
+}
+/* line 233, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer.active {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: auto;
+}
+/* line 240, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer.active .preview p {
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 244, ../sass/_partials/_global.scss */
+.animationsContainer .codeContainer.active .preview:after {
+  right: -100%;
+}
+
+/* line 249, ../sass/_partials/_global.scss */
+.btn {
+  cursor: pointer;
+}
+
+/* line 252, ../sass/_partials/_global.scss */
+section.banner {
+  overflow: hidden;
+  position: relative;
+}
+/* line 256, ../sass/_partials/_global.scss */
+section.banner .content {
+  position: relative;
+  height: 100%;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+/* line 262, ../sass/_partials/_global.scss */
+p.alert {
+  padding: 10px;
+  background: #bb2020;
+  border-radius: 4px;
+  color: #e6e6e6;
+  margin-bottom: 1em;
+}
+
+/* line 269, ../sass/_partials/_global.scss */
+section.banner:after {
+  content: "";
+  position: absolute;
+  left: -149px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-image: url("/img/logo.svg");
+  height: 500px;
+  width: 500px;
+  bottom: -200px;
+  background-repeat: no-repeat;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0.1;
+}
+
+/* line 282, ../sass/_partials/_global.scss */
+.ion-ios-close-empty {
+  display: none;
+}
+
+/* line 2, ../sass/_partials/_buttons.scss */
+.animationList .btn {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+}
+/* line 9, ../sass/_partials/_buttons.scss */
+.animationList .border-fade-in {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  -moz-box-shadow: inset 0 0 0 4px transparent, 0 0 1px transparent;
+  -webkit-box-shadow: inset 0 0 0 4px transparent, 0 0 1px transparent;
+  box-shadow: inset 0 0 0 4px transparent, 0 0 1px transparent;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/* line 17, ../sass/_partials/_buttons.scss */
+.animationList .border-fade-in:hover {
+  -moz-box-shadow: inset 0 0 0 4px #162426, 0 0 1px transparent;
+  -webkit-box-shadow: inset 0 0 0 4px #162426, 0 0 1px transparent;
+  box-shadow: inset 0 0 0 4px #162426, 0 0 1px transparent;
+}
+/* line 23, ../sass/_partials/_buttons.scss */
+.animationList .border-slide-in {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  -moz-box-shadow: inset 0 0 0 0px #162426, 0 0 0px #162426;
+  -webkit-box-shadow: inset 0 0 0 0px #162426, 0 0 0px #162426;
+  box-shadow: inset 0 0 0 0px #162426, 0 0 0px #162426;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/* line 31, ../sass/_partials/_buttons.scss */
+.animationList .border-slide-in:hover {
+  -moz-box-shadow: inset 0 0 0 4px #162426, 0 0 1px transparent;
+  -webkit-box-shadow: inset 0 0 0 4px #162426, 0 0 1px transparent;
+  box-shadow: inset 0 0 0 4px #162426, 0 0 1px transparent;
+}
+/* line 36, ../sass/_partials/_buttons.scss */
+.animationList .hollow-out {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  -moz-box-shadow: inset 0 0 0 4px #66BF7A, 0 0 1px transparent;
+  -webkit-box-shadow: inset 0 0 0 4px #66BF7A, 0 0 1px transparent;
+  box-shadow: inset 0 0 0 4px #66BF7A, 0 0 1px transparent;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/* line 44, ../sass/_partials/_buttons.scss */
+.animationList .hollow-out:hover {
+  background: none;
+  color: #66BF7A;
+}
+/* line 50, ../sass/_partials/_buttons.scss */
+.animationList .border-top-l-r {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+  border: 0px solid #000;
+  position: relative;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  z-index: 2;
+}
+/* line 59, ../sass/_partials/_buttons.scss */
+.animationList .border-top-l-r:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  top: 0;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  height: 3px;
+  background-color: #162426;
+}
+/* line 69, ../sass/_partials/_buttons.scss */
+.animationList .border-top-l-r:hover:before {
+  width: 100%;
+}
+/* line 74, ../sass/_partials/_buttons.scss */
+.animationList .border-top-r-l {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+  border: 0px solid #000;
+  position: relative;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  z-index: 2;
+}
+/* line 83, ../sass/_partials/_buttons.scss */
+.animationList .border-top-r-l:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  top: 0;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  height: 3px;
+  background-color: #162426;
+}
+/* line 93, ../sass/_partials/_buttons.scss */
+.animationList .border-top-r-l:hover:before {
+  width: 100%;
+}
+/* line 98, ../sass/_partials/_buttons.scss */
+.animationList .border-bottom-l-r {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+  border: 0px solid #000;
+  position: relative;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  z-index: 2;
+}
+/* line 107, ../sass/_partials/_buttons.scss */
+.animationList .border-bottom-l-r:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  height: 3px;
+  background-color: #162426;
+}
+/* line 117, ../sass/_partials/_buttons.scss */
+.animationList .border-bottom-l-r:hover:before {
+  width: 100%;
+}
+/* line 122, ../sass/_partials/_buttons.scss */
+.animationList .border-bottom-r-l {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+  border: 0px solid #000;
+  position: relative;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  z-index: 2;
+}
+/* line 131, ../sass/_partials/_buttons.scss */
+.animationList .border-bottom-r-l:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  bottom: 0;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  height: 3px;
+  background-color: #162426;
+}
+/* line 141, ../sass/_partials/_buttons.scss */
+.animationList .border-bottom-r-l:hover:before {
+  width: 100%;
+}
+/* line 146, ../sass/_partials/_buttons.scss */
+.animationList .popout {
+  padding: 10px 20px;
+  background: #162426;
+  color: #fff;
+  display: inline-block;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -moz-box-shadow: 0px 0px 0px #66BF7A;
+  -webkit-box-shadow: 0px 0px 0px #66BF7A;
+  box-shadow: 0px 0px 0px #66BF7A;
+  z-index: 2;
+  position: relative;
+}
+/* line 155, ../sass/_partials/_buttons.scss */
+.animationList .popout:after {
+  z-index: -1;
+  content: "\f489";
+  position: absolute;
+  color: #FFF;
+  width: 0;
+  overflow: hidden;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/* line 180, ../sass/_partials/_buttons.scss */
+.animationList .popout:hover {
+  -moz-box-shadow: 20px 0px 0px #66BF7A;
+  -webkit-box-shadow: 20px 0px 0px #66BF7A;
+  box-shadow: 20px 0px 0px #66BF7A;
+}
+/* line 183, ../sass/_partials/_buttons.scss */
+.animationList .popout:hover:after {
+  right: -20px;
+  width: 20px;
+}
+/* line 189, ../sass/_partials/_buttons.scss */
+.animationList .text-to-icon {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  display: inline-block;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  z-index: 2;
+  position: relative;
+}
+/* line 197, ../sass/_partials/_buttons.scss */
+.animationList .text-to-icon:after {
+  z-index: -1;
+  content: "\f489";
+  position: absolute;
+  color: #FFF;
+  width: 100%;
+  overflow: hidden;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  font-size: 20pt;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  opacity: 0;
+}
+/* line 225, ../sass/_partials/_buttons.scss */
+.animationList .text-to-icon:hover {
+  color: transparent;
+}
+/* line 228, ../sass/_partials/_buttons.scss */
+.animationList .text-to-icon:hover:after {
+  opacity: 1;
+}
+/* line 233, ../sass/_partials/_buttons.scss */
+.animationList .icon-spin {
+  padding: 10px 20px;
+  background: #66BF7A;
+  color: #fff;
+  width: 131px;
+  display: inline-block;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  z-index: 2;
+  position: relative;
+}
+/* line 242, ../sass/_partials/_buttons.scss */
+.animationList .icon-spin:after {
+  z-index: -1;
+  content: "\f489";
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  font-size: 20pt;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  opacity: 1;
+}
+/* line 270, ../sass/_partials/_buttons.scss */
+.animationList .icon-spin:hover:after {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1180px) {
+  /* line 2, ../sass/_partials/_responsive.scss */
+  html body {
+    overflow: initial;
+    height: auto;
+  }
+  /* line 5, ../sass/_partials/_responsive.scss */
+  html body .animationsContainer {
+    height: auto;
+  }
+  /* line 7, ../sass/_partials/_responsive.scss */
+  html body .animationsContainer .containerSection {
+    width: 100%;
+    overflow: initial;
+  }
+  /* line 10, ../sass/_partials/_responsive.scss */
+  html body .animationsContainer .containerSection .item {
+    position: relative;
+    opacity: 1;
+    height: auto;
+    z-index: 99;
+  }
+  /* line 17, ../sass/_partials/_responsive.scss */
+  html body .animationsContainer .animationVariant {
+    display: none;
+  }
+  /* line 20, ../sass/_partials/_responsive.scss */
+  html body .animationsContainer .codeContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -9999;
+    opacity: 0;
+  }
+  /* line 28, ../sass/_partials/_responsive.scss */
+  html body .animationsContainer .codeContainer.active {
+    z-index: 99999;
+    opacity: 1;
+    height: 100vh;
+  }
+  /* line 33, ../sass/_partials/_responsive.scss */
+  html body .animationsContainer .codeContainer .ion-ios-close-empty {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30pt;
+    z-index: 99999;
+    color: #fff;
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 48, ../sass/_partials/_responsive.scss */
+  .banner h1 {
+    font-size: 15pt;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
