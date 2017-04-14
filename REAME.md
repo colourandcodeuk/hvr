@@ -1,9 +1,10 @@
 # Hvr
 ### A collection of beautiful CSS hover effects
 
-#### Version 1.0
-The initial commit includes border and icon animations.
+#### Changelog
 
+##### V1.0
+The initial commit includes border and icon animations.
 Hvr will be updated with 5 new effects weekly.
 
 #### Usage
